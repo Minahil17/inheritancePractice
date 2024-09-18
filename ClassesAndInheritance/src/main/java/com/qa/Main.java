@@ -33,9 +33,10 @@ public class Main {
 
         Reptile lizard = new Reptile("Reptile","Male", 7, "Australia", "Woodland", 15.0, true, true);
         System.out.println(lizard);
+        Bird puffin = new Bird("Bird", "female", 15, "Scotland", "arctic wilderness", 490, true);
 
 //        Array of object instances
-        Animal[] animals = {lizard};
+        Animal[] animals = {lizard, puffin};
         for (Animal a : animals) {
             System.out.println("-----------------------------");
             System.out.println(a);

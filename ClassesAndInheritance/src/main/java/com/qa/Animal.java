@@ -1,6 +1,6 @@
 package com.qa;
 
-public abstract class Animal {
+public abstract class Animal implements IMovable{
 
     public Animal(){
         this("unknown", "unknown", 0, "unknown", "unknown", 0.0);
@@ -90,6 +90,9 @@ public abstract String makeNoise();
         return totalAnimals;
     }
 
-
+    @Override
+    public String takeFlight(int minutes, int elevation) {
+        return "Flight duration: " + minutes + " Flight height: " + elevation;
+    }
 
 }

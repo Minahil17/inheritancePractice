@@ -40,6 +40,7 @@ public class Main {
             System.out.println("-----------------------------");
             System.out.println(a);
             System.out.println(a.makeNoise());
+            System.out.println(a.takeFlight(15, 2));
         }
 
         System.out.println("\nTotal Animals: " + getTotalAnimals());

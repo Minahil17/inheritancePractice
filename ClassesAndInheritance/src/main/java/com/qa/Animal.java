@@ -1,6 +1,6 @@
 package com.qa;
 
-public abstract class Animal {
+public abstract class Animal implements IMoveable {
 
     public Animal(){
         this("unknown", "unknown", 0, "unknown", "unknown", 0.0);
@@ -89,7 +89,5 @@ public abstract String makeNoise();
     public static int getTotalAnimals(){
         return totalAnimals;
     }
-
-
 
 }

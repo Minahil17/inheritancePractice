@@ -46,4 +46,9 @@ public class Reptile extends Animal{
     public void setColdBlooded(boolean coldBlooded) {
         isColdBlooded = coldBlooded;
     }
+
+    @Override
+    public String takeFlight(int minutes, int elevation) {
+        return "\tThe flight duration is: " + minutes + "minutes" + "\n\tThe flight elevation is: " + elevation + "m";
+    }
 }

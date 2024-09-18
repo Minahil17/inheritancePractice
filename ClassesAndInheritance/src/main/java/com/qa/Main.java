@@ -39,7 +39,7 @@ public class Main {
         for (Animal a : animals) {
             System.out.println("-----------------------------");
             System.out.println(a);
-            System.out.println(a.makeNoise());
+            System.out.println(a.takeFlight(20, 2));
         }
 
         System.out.println("\nTotal Animals: " + getTotalAnimals());

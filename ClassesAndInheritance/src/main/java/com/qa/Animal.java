@@ -1,6 +1,6 @@
 package com.qa;
 
-public class Animal {
+public abstract class Animal {
 
     public Animal(){
         this("unknown", "unknown", 0, "unknown", "unknown", 0.0);
@@ -16,7 +16,7 @@ public class Animal {
         totalAnimals++;
 
     }
-
+public abstract String makeNoise();
     @Override
     public String toString() {
         String animalString = "Animal Info: " + "\n\tSpecies: " + this.species + "\n\tGender: "+ this.gender +  "\n\tAge: "+ this.age + "\n\tLocation: "+ this.location + "\n\tHabitat: "+ this.habitat + "\n\tWeight: "+ this.weight+"g";

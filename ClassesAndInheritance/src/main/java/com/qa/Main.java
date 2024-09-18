@@ -10,7 +10,7 @@ public class Main {
 
     public static void animalTypes() {
 
-        Animal frog = new Animal("Amphibian", "Male", 7, "Amazon", "Rainforest", 21.7);
+        //Animal frog = new Animal("Amphibian", "Male", 7, "Amazon", "Rainforest", 21.7);
 //        frog.setSpecies("Amphibian");
 //        frog.setAge(7);
 //        frog.setGender("Male");
@@ -24,21 +24,22 @@ public class Main {
 //        System.out.println("Location: " + frog.getLocation());
 //        System.out.println("Weight: " + frog.getWeight() + "g");
 
-        Animal lion = new Animal("Mammal", "Male", 12, "Sub-Saharan Africa", "Open Savanna", 1500);
+       // Animal lion = new Animal("Mammal", "Male", 12, "Sub-Saharan Africa", "Open Savanna", 1500);
 //        System.out.println(lion.toString());
-        System.out.println(lion);
+        //System.out.println(lion);
 
-        Animal salmon = new Animal("Fish",  "Female", 5, "Pacific Ocean", "Ocean", 20.2);
-        System.out.println(salmon);
+       // Animal salmon = new Animal("Fish",  "Female", 5, "Pacific Ocean", "Ocean", 20.2);
+        //System.out.println(salmon);
 
         Reptile lizard = new Reptile("Reptile","Male", 7, "Australia", "Woodland", 15.0, true, true);
         System.out.println(lizard);
 
 //        Array of object instances
-        Animal[] animals = {frog, lion, salmon, lizard};
+        Animal[] animals = {lizard};
         for (Animal a : animals) {
             System.out.println("-----------------------------");
             System.out.println(a);
+            System.out.println(a.makeNoise());
         }
 
         System.out.println("\nTotal Animals: " + getTotalAnimals());

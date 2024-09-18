@@ -13,6 +13,11 @@ public class Reptile extends Animal{
     }
 
     @Override
+    public String makeNoise() {
+        return "Hiss";
+    }
+
+    @Override
     public String toString() {
         String info = super.toString();
         info = info + "\n\tHas Scales?: " + this.hasScales + "\n\tCold-Blooded?: " + this.isColdBlooded;

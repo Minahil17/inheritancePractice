@@ -31,5 +31,8 @@ public class Main {
         Animal salmon = new Animal("Fish",  "Female", 5, "Pacific Ocean", "Ocean", 20.2);
         System.out.println(salmon);
 
+        Reptile lizard = new Reptile("Reptile","Male", 7, "Australia", "Woodland", 15.0, true, true);
+        System.out.println(lizard);
+
         System.out.println(getTotalAnimals());
     }}

@@ -1,5 +1,5 @@
 package com.qa;
 
 public interface IMoveable {
-    String takeFlight(int minutes, int elevation);
+    String takeFlight(int minutes, int elevation) throws FlightException;
 }

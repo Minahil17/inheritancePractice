@@ -14,7 +14,7 @@ public class Reptile extends Animal{
 
     @Override
     public String makeNoise() {
-        return "Hiss";
+        return "";
     }
 
     @Override
@@ -48,7 +48,30 @@ public class Reptile extends Animal{
     }
 
     @Override
-    public String takeFlight(int minutes, int elevation) {
-        return "\tThe flight duration is: " + minutes + "minutes" + "\n\tThe flight elevation is: " + elevation + "m";
+    public String takeFlight(int minutes, int elevation) throws FlightException {
+        // add validation for max mins or max height - create an exception for flying too high or going too far!
+        int maxElevation = 100;
+        int maxMinutes = 60;
+        if(elevation > maxElevation){
+            throw new FlightException("Flight elevation exceeds the maximum limit of " + maxElevation + " meters.");
+        }
+        else
+            return "\tThe flight duration is: " + minutes + "minutes" + "\n\tThe flight elevation is: " + elevation + "m";
     }
 }
+// Check if the elevation exceeds the maximum allowed value
+//        if (elevation > maxElevation) {
+//        throw new FlightException("Flight elevation exceeds the maximum limit of " + maxElevation + " meters.");
+//        }
+//
+//                // Check if the flight duration exceeds the maximum allowed time
+//                if (minutes > maxDuration) {
+//        throw new FlightException("Flight duration exceeds the maximum limit of " + maxDuration + " minutes.");
+//        }
+//
+//                // Return flight details if no exceptions are thrown
+//                return "\tThe flight duration is: " + minutes + " minutes" +
+//        "\n\tThe flight elevation is: " + elevation + " meters";
+//        }
+//        }
+

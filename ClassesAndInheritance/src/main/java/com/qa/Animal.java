@@ -16,7 +16,9 @@ public abstract class Animal implements IMoveable {
         totalAnimals++;
 
     }
-public abstract String makeNoise();
+
+    public abstract String makeNoise();
+
     @Override
     public String toString() {
         String animalString = "Animal Info: " + "\n\tSpecies: " + this.species + "\n\tGender: "+ this.gender +  "\n\tAge: "+ this.age + "\n\tLocation: "+ this.location + "\n\tHabitat: "+ this.habitat + "\n\tWeight: "+ this.weight+"g";

@@ -39,7 +39,13 @@ public class Main {
         for (Animal a : animals) {
             System.out.println("-----------------------------");
             System.out.println(a);
-            System.out.println(a.takeFlight(20, 2));
+            System.out.println(a.makeNoise());
+            try {
+                System.out.println(a.takeFlight(20, 50));
+                System.out.println(a.takeFlight(20, 200));
+            } catch (FlightException e) {
+                System.err.println("Flight Error: " + e.getMessage());
+            }
         }
 
         System.out.println("\nTotal Animals: " + getTotalAnimals());

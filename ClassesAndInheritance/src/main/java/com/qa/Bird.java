@@ -15,6 +15,7 @@ public class Bird extends Animal{
     }
 
  // overriding the abstract method used from animal abstract class
+    // polymorphism as makeNoise is different for each animal
  @Override
  public String makeNoise() {
      return "Hoot hoot";
